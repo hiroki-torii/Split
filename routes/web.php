@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HistoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages/title');
 });
+
+Route::get('/title', function () {
+    return view('pages/title');
+})->name('title');
+
+Route::get('/enter', function () {
+    return view('pages/enter');
+})->name('enter');
+
+Route::get('/list', [HistoryController::class, 'display']) -> name('list');
+
+Route::get('/show', function () {
+    return view('pages/show');
+})->name('show');
+
+Route::post('/save', [HistoryController::class, 'save']) -> name('save');
+
+
