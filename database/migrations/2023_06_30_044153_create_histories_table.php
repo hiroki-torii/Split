@@ -17,20 +17,20 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name', 20);
-            $table->string('sum_cost', 10);
-            $table->string('num_grade3', 5);
-            $table->string('cost_grade3', 10);
-            $table->string('ratio_grade3', 3);
-            $table->string('num_grade2', 5);
-            $table->string('cost_grade2', 10);
-            $table->string('ratio_grade2', 3);
-            $table->string('num_grade1', 5);
-            $table->string('cost_grade1', 10);
-            $table->string('ratio_grade1', 3);
-            $table->string('sum_people', 5);
-            $table->string('collect_money', 10);
-            $table->string('change', 10);
-            $table->string('average', 10);
+            $table->string('sum_cost', 10)->nullable();
+            $table->string('num_grade3', 5)->nullable();
+            $table->string('cost_grade3', 10)->nullable();
+            $table->string('ratio_grade3', 5)->nullable();
+            $table->string('num_grade2', 5)->nullable();
+            $table->string('cost_grade2', 10)->nullable();
+            $table->string('ratio_grade2', 5)->nullable();
+            $table->string('num_grade1', 5)->nullable();
+            $table->string('cost_grade1', 10)->nullable();
+            $table->string('ratio_grade1', 5)->nullable();
+            $table->string('sum_people', 5)->nullable();
+            $table->string('collect_money', 10)->nullable();
+            $table->string('change', 10)->nullable();
+            $table->string('average', 10)->nullable();
         });
     }
 
