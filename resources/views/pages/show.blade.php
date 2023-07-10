@@ -51,7 +51,7 @@
         
         <h2>平均：</h2>
         
-        <a href="{{ route('list') }}" class="btn_back">戻る</a>
+        <a href="/pages/index" class="btn_back">戻る</a>
         
     </body>
 </html>

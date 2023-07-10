@@ -9,17 +9,17 @@
     <body>
         <h1>履歴一覧</h1>
         
-        <a href="{{ route('show') }}">3月追いコン打ち上げ</a><br>
-        
-        {{--@foreach($histories as $history)
-            <div class= 'history'>
-                <a href="/pages/{{ $history->id }}"><h2 class='name'>{{ $history->name }}</h2></a>
-            </div>
-        @endforeach--}}
+        <div class='histories'>
+            @foreach ($histories as $history)
+                <div class='history'>
+                    <h2 class='name'>{{ $history->name }}</h2>
+                    <p class='created_at'>{{ $history->created_at }}</p>
+                </div>
+            @endforeach
 
         <button type="button">並び替え</button>
         
-        <a href="{{ route('enter') }}" class="btn_back">戻る</a>
+        <a href="/pages/enter" class="btn_back">戻る</a>
         
     </body>
 </html>

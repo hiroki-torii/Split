@@ -18,20 +18,20 @@ Route::get('/', function () {
     return view('pages/title');
 });
 
-Route::get('/title', function () {
+Route::get('/pages/title', function () {
     return view('pages/title');
 })->name('title');
 
-Route::get('/enter', function () {
+Route::get('/pages/enter', function () {
     return view('pages/enter');
 })->name('enter');
 
-Route::get('/list', [HistoryController::class, 'display']) -> name('list');
+Route::get('/pages/index', [HistoryController::class, 'index']) -> name('index');
 
-Route::get('/show', function () {
+Route::get('/pages/show', function () {
     return view('pages/show');
 })->name('show');
 
-Route::post('/save', [HistoryController::class, 'save']) -> name('save');
+Route::post('/pages/save', [HistoryController::class, 'save']) -> name('save');
 
 

@@ -8,6 +8,6 @@
     </head>
     <body>
         <h1>タイトル（代金計算アプリ）</h1>
-        <a href="{{ route('enter') }}" class="btn_enter">入力開始</a>
+        <a href="/pages/enter" class="btn_enter">入力開始</a>
     </body>
 </html>
