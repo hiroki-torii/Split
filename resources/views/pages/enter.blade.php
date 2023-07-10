@@ -65,9 +65,9 @@
                 <button type="button" onclick="clearValues()">クリア</button>
                 <button type="button" onclick="calculate()">計算</button>
                 <button type="submit">保存</button>
-                <a href="{{ route('list') }}" class="btn_history">履歴</a>
+                <a href="/pages/index" class="btn_history">履歴</a>
             </div>
         </form>
-        <a href="{{ route('title') }}" class="btn_back">戻る</a>
+        <a href="/" class="btn_back">戻る</a>
     </body>
 </html>

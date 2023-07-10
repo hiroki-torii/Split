@@ -11,7 +11,12 @@ class HistoryController extends Controller
         dd($request['name']);
     }
     
-    public function display(History $history) {
-        dd($history->get());
+    public function index(History $history) {
+        return view('pages.index')->with(['histories' => $history->get()]);
+    }
+    
+    public function show(History $history)
+    {
+        return view('pages.show')->with(['history' => $history]);
     }
 }
