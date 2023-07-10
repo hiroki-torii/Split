@@ -14,4 +14,9 @@ class HistoryController extends Controller
     public function index(History $history) {
         return view('pages.index')->with(['histories' => $history->get()]);
     }
+    
+    public function show(History $history)
+    {
+        return view('pages.show')->with(['history' => $history]);
+    }
 }

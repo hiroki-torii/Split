@@ -12,7 +12,9 @@
         <div class='histories'>
             @foreach ($histories as $history)
                 <div class='history'>
-                    <h2 class='name'>{{ $history->name }}</h2>
+                    <h2 class='name'>
+                        <a href="/pages/{{ $history->id }}">{{ $history->name }}</a>
+                    </h2>
                     <p class='created_at'>{{ $history->created_at }}</p>
                 </div>
             @endforeach
