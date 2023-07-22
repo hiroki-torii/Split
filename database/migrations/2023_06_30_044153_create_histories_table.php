@@ -31,6 +31,7 @@ return new class extends Migration
             $table->string('collect_money', 10)->nullable();
             $table->string('change', 10)->nullable();
             $table->string('average', 10)->nullable();
+            $table->softDeletes();
         });
     }
 

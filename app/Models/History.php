@@ -4,9 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class History extends Model
 {
+    use SoftDeletes;
+    
     protected $fillable = [
         'name',
         'sum_cost',
@@ -25,3 +28,5 @@ class History extends Model
         'average',
         ];
 }
+
+

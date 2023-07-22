@@ -56,25 +56,47 @@
                 <input type="text" name="history[cost_grade1]">
             </div>
             
-            <h2>合計人数：</h2>
-            <input type="text" name="history[sum_people]">
+            <div style="display: flex; align-items: center;">
+                <h2 style="margin-right: 10px;">合計人数：</h2>
+                <input type="text" name="history[sum_people]">
+                <h3>人</h3>
+            </div>
             
-            <h2>集金：</h2>
-            <input type="text" name="history[collect_money]">
+            <div style="display: flex; align-items: center;">
+                <h2 style="margin-right: 10px;">集金：</h2>
+                <input type="text" name="history[collect_money]">
+                <h3>円</h3>
+            </div>
             
-            <h2>おつり：</h2>
-            <input type="text" name="history[change]">
+            <div style="display: flex; align-items: center;">
+                <h2 style="margin-right: 10px;">おつり：</h2>
+                <input type="text" name="history[change]">
+                <h3>円</h3>
+            </div>
             
-            <h2>平均：</h2>
-            <input type="text" name="history[average]">
+            <div style="display: flex; align-items: center;">
+                <h2 style="margin-right: 10px;">平均：</h2>
+                <input type="text" name="history[average]">
+                <h3>円</h3>
+            </div>
             
             <div>
-                <button type="button" onclick="clearValues()">クリア</button>
-                <button type="button" onclick="calculate()">計算</button>
+                
+                
                 <button type="submit">保存</button>
-                <a href="/pages/index" class="btn_history">履歴</a>
+                
             </div>
         </form>
+        
+        <button onclick="location.href='/pages/clear'">クリア</button>
+        <button type="button" id="cal">計算</button>
+        <button onclick="location.href='/pages/index'">履歴</button>
+        <br>
+        
         <a href="/" class="btn_back">戻る</a>
+        
+        <script src="{{ asset('/js/cal.js') }}">
+            
+        </script>
     </body>
 </html>

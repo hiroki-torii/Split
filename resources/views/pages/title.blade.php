@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-        <h1>タイトル（代金計算アプリ）</h1>
+        <h1>Split（代金計算アプリ）</h1>
         <a href="/pages/enter" class="btn_enter">入力開始</a>
     </body>
 </html>
