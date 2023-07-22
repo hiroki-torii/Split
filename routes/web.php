@@ -32,8 +32,14 @@ Route::get('/pages/show', function () {
     return view('pages/show');
 })->name('show');
 
+Route::get('/pages/clear', function () {
+    return view('pages/enter');
+});
+
 Route::get('/pages/{history}', [HistoryController::class ,'show']);
 
 Route::post('/pages/save', [HistoryController::class, 'save']) -> name('save');
+
+Route::delete('/pages/{history}', [HistoryController::class, 'delete']);
 
 

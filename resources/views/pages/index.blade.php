@@ -16,12 +16,26 @@
                         <a href="/pages/{{ $history->id }}">{{ $history->name }}</a>
                     </h2>
                     <p class='created_at'>{{ $history->created_at }}</p>
+                    <form action="/pages/{{ $history->id }}" id="form_{{ $history->id }}" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <button type="button" onclick="deletePost({{ $history->id }})">削除</button>
+                    </form>
                 </div>
-            @endforeach
-
-        <button type="button">並び替え</button>
+            @endforeach    
+        </div>
         
         <a href="/pages/enter" class="btn_back">戻る</a>
+        
+        <script>
+            function deletePost(id) {
+                'use strict'
+                
+                if (confirm('削除すると復元できません。\n本当に削除しますか？')) {
+                    document.getElementById(`form_${id}`).submit();
+                }
+            }
+        </script>
         
     </body>
 </html>
