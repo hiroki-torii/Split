@@ -25,6 +25,8 @@
             @endforeach    
         </div>
         
+        <br>
+        
         <a href="/pages/enter" class="btn_back">戻る</a>
         
         <script>
