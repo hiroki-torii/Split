@@ -85,14 +85,17 @@
             </div>
             
             <div>
+
                 <button type="submit">保存</button>
                 <!--<button onclick="location.href='/pages/clear'">クリア</button>-->
                 <!--<button type="button" id="cal">計算</button>-->
                 <!--<button onclick="location.href='/pages/index'">履歴</button>-->
+
             </div>
         </form>
         
         
+
         <button onclick="location.href='/pages/clear'">クリア</button>
         <button type="button" id="cal">計算</button>
         <button onclick="location.href='/pages/index'">履歴</button>
