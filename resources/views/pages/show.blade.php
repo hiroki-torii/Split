@@ -25,10 +25,11 @@
                 <h3>人</h3>
             </div>
             <div style="display: flex; align-items: center;">
-                <h2 style="margin-right: 10px;">割合：</h2>
-                    {{ $history->ratio_grade3 }}
-                <h2>代金：</h2>
+                <h2 style="margin-right: 10px;">割合</h2>
+                    {{ $history->ratio_grade3 }} &emsp;
+                <h2>代金</h2>
                     {{ $history->cost_grade3 }}
+                <h3>円</h3>    
             </div>
             
             <div style="display: flex; align-items: center;">
@@ -37,10 +38,11 @@
                 <h3>人</h3>
             </div>
             <div style="display: flex; align-items: center;">
-                <h2 style="margin-right: 10px;">割合：</h2>
-                    {{ $history->ratio_grade2 }}
-                <h2>代金：</h2>
+                <h2 style="margin-right: 10px;">割合</h2>
+                    {{ $history->ratio_grade2 }} &emsp;
+                <h2>代金</h2>
                     {{ $history->cost_grade2 }}
+                <h3>円</h3>    
             </div>
             
             <div style="display: flex; align-items: center;">
@@ -49,34 +51,35 @@
                 <h3>人</h3>
             </div>
             <div style="display: flex; align-items: center;">
-                <h2 style="margin-right: 10px;">割合：</h2>
-                    {{ $history->ratio_grade1 }}
-                <h2>代金：</h2>
+                <h2 style="margin-right: 10px;">割合</h2>
+                    {{ $history->ratio_grade1 }} &emsp;
+                <h2>代金</h2>
                     {{ $history->cost_grade1 }}
+                <h3>円</h3>    
             </div>
             
             <div style="display: flex; align-items: center;">
-                <h2 style="margin-right: 10px;">合計人数：</h2>
+                <h2 style="margin-right: 10px;">合計人数</h2>
                     {{ $history->sum_people }}
-                <h2>人</h2>
+                <h3>人</h3>
             </div>    
             
             <div style="display: flex; align-items: center;">
-                <h2 style="margin-right: 10px;">集金：</h2>
+                <h2 style="margin-right: 10px;">集金</h2>
                     {{ $history->collect_money }}
-                <h2>円</h2>
+                <h3>円</h3>
             </div>  
             
             <div style="display: flex; align-items: center;">
-                <h2 style="margin-right: 10px;">おつり：</h2>
+                <h2 style="margin-right: 10px;">おつり</h2>
                     {{ $history->change }}
-                <h2>円</h2>  
+                <h3>円</h3>  
             </div>    
             
              <div style="display: flex; align-items: center;">
-                <h2 style="margin-right: 10px;">平均：</h2>
+                <h2 style="margin-right: 10px;">平均</h2>
                     {{ $history->average }}
-                <h2>円</h2>
+                <h3>円</h3>
             </div>    
         </div>
         
