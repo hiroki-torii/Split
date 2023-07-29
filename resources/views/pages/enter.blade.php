@@ -14,7 +14,7 @@
                 <input type="text" name="history[name]"/> &emsp;
                 <p class='name__error' style="color:red">{{ $errors->first('history.name') }}</p>
             </div>
-    
+            <p>合計額、各学年の人数・割合を入力してください。</p>
             <div style="display: flex; align-items: center;">
                 <h1 style="margin-right: 10px;">合計額</h1>
                 <input type="text" name="history[sum_cost]"/>
